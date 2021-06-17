@@ -1,0 +1,10 @@
+.app-list {
+  padding-left: 0;
+  margin-top: 50px;
+  list-style-type: none;
+}
+.app-list .list-group-item {
+  display: flex;
+  padding: 20px 35px 10px 35px;
+  margin-top: 10px;
+}

@@ -1,0 +1,19 @@
+.search-panel {
+  margin: 1rem 0;
+  height: 45px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-panel .search-input {
+  width: 550px;
+  height: 43px;
+  border-radius: 25px;
+  padding-left: 15px;
+  border: 2px solid rgb(62, 62, 145);
+  font-size: 15px;
+  outline: none;
+  margin-right: 3px;
+}
