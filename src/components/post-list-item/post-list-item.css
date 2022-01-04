@@ -1,10 +1,26 @@
 .app-list-item {
-  padding: 10px;
+  padding: 10px 20px;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
   font-size: 1.25rem;
   border: 2px solid rgb(209, 209, 209);
+  border-radius: 100px;
+}
+
+.app-list-item-enter {
+  opacity: 0;
+}
+.app-list-item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.app-list-item-exit {
+  opacity: 1;
+}
+.app-list-item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
 
 .app-list-item button {

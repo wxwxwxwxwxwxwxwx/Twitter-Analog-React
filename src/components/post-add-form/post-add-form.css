@@ -5,7 +5,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .bottom-panel .new-post-label {
@@ -16,7 +16,6 @@
   border: 2px solid #3e3e91;
   font-size: 15px;
   outline: none;
-  /* flex-grow: 1; */
   margin-right: 3px;
 }
 

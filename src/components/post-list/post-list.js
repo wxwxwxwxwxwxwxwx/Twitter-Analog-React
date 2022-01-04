@@ -1,13 +1,14 @@
 import React from 'react';
 import PostListItem from '../post-list-item';
-import './post-list.css'
+import './post-list.css';
 
 const PostList = ({posts, onDelete, onToggle}) => {
+
 
     const elements = posts.map(item => {
         const {id, e, ...itemProps} = item
         return (
-            <div key={id} className="app-list-item-row">
+            <div className="app-list-item-row">
                 <PostListItem 
                     {...itemProps}
                     onDelete={() => onDelete(id)}
