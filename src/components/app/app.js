@@ -120,6 +120,8 @@ export default class App extends Component {
                 <AppHeader
                     isLiked={isLiked}
                     allPosts={allPosts}/>
+                <PostAddForm
+                    onAdd={this.addItem}/>
                 <div className="search-panel d-flex">
                     <SearchPanel
                         onUpdateSearch={this.onUpdateSearch}/>
@@ -131,8 +133,6 @@ export default class App extends Component {
                     posts={visiblePosts}
                     onDelete={this.deleteItem}
                     onToggle={this.onToggle}/>
-                <PostAddForm
-                    onAdd={this.addItem}/>
             </AppBlock>
         )
     }
