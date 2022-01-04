@@ -27,15 +27,10 @@ export default class App extends Component {
             term: '',
             filter: 'all'
         };
-        this.deleteItem = this.deleteItem.bind(this);
-        this.addItem = this.addItem.bind(this);
-        this.onToggle = this.onToggle.bind(this);
-        this.onUpdateSearch = this.onUpdateSearch.bind(this);
-        this.onFilterSelect = this.onFilterSelect.bind(this);
         this.maxId = 4;
     }
 
-    deleteItem(id) {
+    deleteItem = (id) => {
         this.setState(({data}) => {
             const index = data.findIndex(elem => elem.id === id);
 
@@ -47,7 +42,7 @@ export default class App extends Component {
         });
     }
 
-    addItem(body) {
+    addItem = (body) => {
         const newItem = {
             label: body,
             important: false,
@@ -62,7 +57,7 @@ export default class App extends Component {
         });
     }
 
-    onToggle(id, e) {
+    onToggle = (id, e) => {
         this.setState(({data}) => {
             const index = data.findIndex(elem => elem.id === id);
 
@@ -81,7 +76,7 @@ export default class App extends Component {
         });
     }
 
-    searchPost(items, term) {
+    searchPost = (items, term) => {
         if (term.length === 0) {
             return items
         }
@@ -91,7 +86,7 @@ export default class App extends Component {
         });
     }
 
-    filterPost(items, filter) {
+    filterPost = (items, filter) => {
         if (filter === 'liked') {
             return items.filter(item => item.liked)
         } else {
@@ -99,11 +94,11 @@ export default class App extends Component {
         }
     }
 
-    onUpdateSearch(term) {
+    onUpdateSearch = (term) => {
         this.setState({term});
     }
 
-    onFilterSelect(filter) {
+    onFilterSelect = (filter) => {
         this.setState({filter})
     }
 

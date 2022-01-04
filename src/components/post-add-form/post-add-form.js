@@ -7,16 +7,14 @@ export default class PostAddForm extends Component {
         this.state = {
             text: ''
         }
-        this.onValueChange = this.onValueChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this)
     }
-    onValueChange(e) {
+    onValueChange = (e) => {
         this.setState({
             text: e.target.value
         });
     }
 
-    onSubmit(e) {
+    onSubmit = (e) => {
         e.preventDefault();
         if (this.state.text !== '') {
             this.props.onAdd(this.state.text)
