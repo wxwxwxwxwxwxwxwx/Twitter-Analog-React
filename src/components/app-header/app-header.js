@@ -6,8 +6,10 @@ const Header = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
     h1 {
         font-size: 26px;
+        margin-right: 25px
     }
     h2 {
         font-size: 1.2rem;

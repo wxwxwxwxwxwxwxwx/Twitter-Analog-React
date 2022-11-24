@@ -17,3 +17,14 @@
   outline: none;
   margin-right: 3px;
 }
+
+@media (max-width: 575px) {
+  .search-panel {
+    flex-direction: column;
+    height: auto;
+  }
+  .search-panel .search-input {
+    width: 100%;
+    font-size: 12px;
+  }
+}

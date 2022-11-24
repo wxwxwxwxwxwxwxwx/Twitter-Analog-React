@@ -53,11 +53,12 @@
     font-size: 16px;
     color: red;
     transition: 0.3s all;
-    transform: translateX(30px);
+    transform: translateX(25px);
     opacity: 0;
 }
 
 .app-list-item-label {
+  width: 65%;
   display: block;
   line-height: 35px;
   cursor: pointer;
@@ -75,6 +76,21 @@
 }
 
 .app-list-item.important .btn-star {
-    
-    color: #FFD700;
+  color: #FFD700;
+}
+
+@media (max-width: 475px) {
+  .app-list {
+    margin-top: 35px;
+  }
+  .app-list-item {
+    flex-direction: column;
+    align-items: start;
+    border-radius: 13px;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .app-list-item-label {
+    width: 100%;
+  }
 }

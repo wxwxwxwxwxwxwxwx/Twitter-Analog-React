@@ -8,11 +8,12 @@ const PostList = ({posts, onDelete, onToggle}) => {
     const elements = posts.map(item => {
         const {id, e, ...itemProps} = item
         return (
-            <div className="app-list-item-row">
-                <PostListItem 
+            <div key={id} className="app-list-item-row">
+                <PostListItem
                     {...itemProps}
                     onDelete={() => onDelete(id)}
-                    onToggle={(e) => onToggle(id, e)}/>
+                    onToggle={(e) => onToggle(id, e)}
+                    />
             </div>
         )
     })

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import AppHeader from '../app-header';
 import SearchPanel from '../search-panel';
@@ -27,7 +28,6 @@ export default class App extends Component {
             term: '',
             filter: 'all'
         };
-        this.maxId = 4;
     }
 
     deleteItem = (id) => {
@@ -46,7 +46,7 @@ export default class App extends Component {
         const newItem = {
             label: body,
             important: false,
-            id: this.maxId++
+            id: uuidv4()
         }
         this.setState(({data}) => {
             const newArr = [...data, newItem];

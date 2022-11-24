@@ -8,3 +8,9 @@
   padding: 20px 35px 10px 35px;
   margin-top: 10px;
 }
+
+@media (max-width: 475px) {
+  .app-list {
+    margin-top: 35px;
+  }
+}
