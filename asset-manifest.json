@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Twitter-Analog-React/static/css/main.88155554.chunk.css",
+    "main.js": "/Twitter-Analog-React/static/js/main.04948f4e.chunk.js",
+    "main.js.map": "/Twitter-Analog-React/static/js/main.04948f4e.chunk.js.map",
+    "runtime-main.js": "/Twitter-Analog-React/static/js/runtime-main.704826f1.js",
+    "runtime-main.js.map": "/Twitter-Analog-React/static/js/runtime-main.704826f1.js.map",
+    "static/js/2.08c53495.chunk.js": "/Twitter-Analog-React/static/js/2.08c53495.chunk.js",
+    "static/js/2.08c53495.chunk.js.map": "/Twitter-Analog-React/static/js/2.08c53495.chunk.js.map",
+    "index.html": "/Twitter-Analog-React/index.html",
+    "static/css/main.88155554.chunk.css.map": "/Twitter-Analog-React/static/css/main.88155554.chunk.css.map",
+    "static/js/2.08c53495.chunk.js.LICENSE.txt": "/Twitter-Analog-React/static/js/2.08c53495.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.704826f1.js",
+    "static/js/2.08c53495.chunk.js",
+    "static/css/main.88155554.chunk.css",
+    "static/js/main.04948f4e.chunk.js"
+  ]
+}
